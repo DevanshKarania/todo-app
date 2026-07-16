@@ -1,0 +1,19 @@
+* {
+    transition:
+        background .3s,
+        color .3s,
+        transform .25s,
+        box-shadow .3s;
+}
+
+.todo-card:hover {
+    transform: translateY(-5px);
+}
+
+button:hover {
+    transform: scale(1.04);
+}
+
+button:active {
+    transform: scale(.95);
+}
