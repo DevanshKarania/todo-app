@@ -1,6 +1,6 @@
 import { Todo } from "../types/Todo";
 
-const API_URL = "http://localhost:3000/todos";
+const API_URL = `${import.meta.env.VITE_API_URL}/todos`;
 
 function getHeaders(): HeadersInit {
     const token = localStorage.getItem("token");
@@ -24,7 +24,7 @@ export async function getTodos(): Promise<Todo[]> {
     if (!response.ok) {
         throw new Error("Failed to fetch todos");
     }
-    
+
     const result = await response.json();
 
     return result.data.map((todo: any) => ({
