@@ -7,7 +7,16 @@ const todoRoutes = require("./routes/todoRoutes");
 const authRoutes = require("./routes/authRoutes");
 const app = express();
 
-app.use(cors());
+const cors = require("cors");
+
+app.use(cors({
+    origin: [
+        "http://localhost:5173",
+        "https://todo-app-nu-murex-99.vercel.app/"
+    ],
+    credentials: true
+}));
+
 app.use(express.json());
 app.use("/todos", todoRoutes);
 app.use("/auth", authRoutes);
