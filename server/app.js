@@ -10,7 +10,7 @@ const app = express();
 app.use(cors({
     origin: [
         "http://localhost:5173",
-        "https://todo-app-nu-murex-99.vercel.app/"
+        "https://todo-app-nu-murex-99.vercel.app"
     ],
     credentials: true
 }));
