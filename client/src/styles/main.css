@@ -8,7 +8,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background: linear-gradient(135deg, #eef2ff, #dbeafe);
+    background: coral;
     color: var(--text);
     min-height: 100vh;
     transition: var(--transition);
