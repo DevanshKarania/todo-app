@@ -1,16 +1,16 @@
 :root {
     --primary: #4f46e5;
     --secondary: #6366f1;
-    --background: coral;
-    --surface: rgb(248, 253, 252);
+    --background: #f5f7fb;
+    --surface: rgb(219, 243, 236);
     --text: #222;
     --radius: 12px;
     --shadow: 0 8px 25px rgba(0, 0, 0, .1);
     --completed-text: #6b7280;
     --completed: rgb(100, 233, 100);
     --status-text: black;
-    --filter-button: #f5f7fb;
-    --add-button: #f5f7fb;
+    --filter-button: coral;
+    --add-button: coral;
 }
 
 body.dark {
