@@ -296,7 +296,6 @@ async function login(): Promise<void> {
     localStorage.setItem("token", result.token);
     localStorage.setItem("username", result.user.username);
 
-    alert("Login successful!");
     await loadTodos();
   } catch (error) {
     console.error(error);
@@ -357,7 +356,7 @@ async function saveEdit(): Promise<void> {
     title.value,
     dueDate.value
   );
-  
+
   editingTodo = null;
   await loadTodos();
 }
