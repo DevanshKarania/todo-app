@@ -1,7 +1,7 @@
 :root {
     --primary: #4f46e5;
     --secondary: #6366f1;
-    --background: #f5f7fb;
+    --background: coral;
     --surface: rgb(248, 253, 252);
     --text: #222;
     --radius: 12px;
@@ -9,8 +9,8 @@
     --completed-text: #6b7280;
     --completed: rgb(100, 233, 100);
     --status-text: black;
-    --filter-button: coral;
-    --add-button: coral;
+    --filter-button: #f5f7fb;
+    --add-button: #f5f7fb;
 }
 
 body.dark {
